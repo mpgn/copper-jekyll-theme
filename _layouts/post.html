@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="{% if site.left_bar %} col-lg-8 {% else %} col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 {% endif %}  col-sm-12 col-xs-12">
+  <div class="row grid-content"> 
+      <div class="col-md-12 col-xs-12 projet" style="margin-bottom:20px;">
+          <p class="hidden-xs hidden-sm"><a href="{{ site.url }}{{ site.baseurl }}/">Home</a> <span style="color:darkgrey"> / <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category | downcase }}">{{ page.category | downcase }}</a> / {{ page.title | downcase }}</span></p>
+          <h3>{{ page.title }}<small class="pull-right"><a href="{{ site.baseurl }}/feed.xml" target="_blank"><i class="fa fa-rss-square rss"></i></a></small><small class="pull-right"><a class="twitter-share-button" href="https://twitter.com/intent/tweet?via={{ site.twitter }}&text={{ page.description }}">Tweet</a></small></h3> 
+          <hr>
+              <p class="text-center">
+                  {{ page.title }} <br>
+                  <span class="text-small">{{ page.description }}</span> <br>
+                  {% if page.github != nil  %}
+                    <a href="{{ page.github }}">{{ page.github }}</a>
+                  {% elsif page.url_site != nil %}
+                    <a href="{{ page.url_site }}">{{ page.url_site }}</a>
+                  {% endif %}
+
+              </p>
+          <hr>
+
+            <div class="entry">
+              {{ content }}
+            </div>
+            <hr>
+            <div class="date">
+              Written on {{ page.date | date: "%B %e, %Y" }} on my free time
+            </div>
+            <br>
+            
+            {% include google_comment.html %}
+            {% include disqus.html %}
+
+      </div>
+  </div>
+

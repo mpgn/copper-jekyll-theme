@@ -1,0 +1,128 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "bootstrap";
+@import "font-awesome";
+// Syntax highlighting @import is at the bottom of this file
+
+/***************************/
+/* BASE RULES OF YOUR SITE */
+/***************************/
+
+/* magic append */
+.vertical-center {
+    margin-top: 20px;
+  min-height: calc(100% - 40px);  /* Fallback for browsers do NOT support vh unit */
+  min-height: calc(100vh - 40px); /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+@media (min-width: 1200px) {
+    .border-right {
+        border-right: 1px solid #E6E6E6;
+    }
+}
+
+@media (max-width: 768px) { 
+    .grid-content-small {
+        border-top: 2px solid #E6E6E6;
+    }
+    .left-bar {
+        height: 150px !important;
+        border-right: 0px;
+    } 
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        height: 80px;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.entry > p {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3a3a;
+    line-height: 1.8;
+}
+
+.img-resize-3 {
+    max-width: 30%;
+}
+
+.img-resize-2 {
+    max-width: 35%;
+}
+
+.entry img {
+    padding: 3px;
+    border: 1px solid #d8d8d8;
+    margin: 0 auto;
+}
+
+.fw {
+	margin-right: 4px;
+}
+
+.img-projects {
+    margin-bottom: 5px;
+}
+.contributor {
+    color: #646464;
+}
+.link-grid {
+    color: inherit; 
+}
+.link-grid:hover {
+    color: inherit;
+}
+.link-grid:visited {
+    color: inherit;
+}
+.link-grid:active {
+    color: inherit;
+}
+.link-grid:link {
+    color: inherit;
+}
+.col-md-4:hover {
+    background: rgb(228, 228, 228);
+}
+
+.rss {
+    color: rgb(243, 103, 0);
+    font-size: 22px;
+    padding: 0px;
+    margin: -1px;
+    margin-left: 3px;
+}
+
+pre {
+    border-radius: 0px;
+}
+
+.center-image {
+    text-align: center !important;
+}
+
+.color-icon {
+    color: black;
+    font-size: 16px;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

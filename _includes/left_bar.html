@@ -1,0 +1,73 @@
+<div class="col-lg-offset-1 col-lg-3 col-md-12 col-sm-12 col-xs-12 left-bar border-right">
+
+    {% if site.image %}
+        <a href="{{ site.url }}{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}{{ site.image }}" class="img-responsive hidden-xs hidden-sm hidden-md" alt="{{ site.surname }}"/>
+        </a>
+    {% endif %}
+    <h3 class="text-center">{{ site.name }} <small>{{ site.surname }}</small></h3>
+    <p class="text-center" style="color: #707073;">{{ site.description }}</p>
+    <div class="hidden-lg" style="margin-bottom:5px;">
+        <p class="text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}" class="color-icon" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a> - 
+            {% include social-icons.html %}
+        </p>
+    </div>
+    <div class="hidden-xs hidden-sm hidden-md" style="margin-bottom:5px;">
+        <hr >
+
+        {% if site.github %}
+        <i class="fa fa-github fw"></i><a href="https://github.com/{{ site.github }}"> github.com/{{ site.github }}</a>    <br />
+        {% endif %}
+
+        {% if site.twitter %}
+        <i class="fa fa-twitter fw"></i><a href="https://twitter.com/{{ site.twitter }}"> twitter.com/{{ site.twitter }}</a>    <br />
+        {% endif %}
+
+        {% if site.dribbble %}
+        <i class="fa fa-dribbble fw"></i><a href="{{ site.dribbble }}" target="_blank"> dribbble.com/</a>
+        {% endif %}
+
+        {% if site.email %}
+        <i class="fa fa-envelope fw"></i><a href="{{ site.email }}" target="_blank"> {{ site.email }}</a>
+        {% endif %}
+
+        {% if site.facebook %}
+        <i class="fa fa-facebook fw"></i><a href="{{ site.facebook }}" target="_blank"> {{ site.facebook }}</a>
+        {% endif %}
+
+        {% if site.linkedin %}
+        <i class="fa fa-linkedin fw"></i><a href="{{ site.linkedin }}" target="_blank"> {{ site.linkedin }}</a>
+        {% endif %}
+
+        {% if site.rss %}
+        <i class="fa fa-rss fw"></i><a href="{{ site.rss }}" target="_blank"> {{ site.rss }}</a>
+        {% endif %}
+
+        {% if site.youtube %}
+        <i class="fa fa-youtube fw"></i><a href="{{ site.youtube }}" target="_blank"> {{ site.youtube }}</a>
+        {% endif %}
+
+        {% if site.pgp %}
+        <i class="fa fa-key fw"></i><a href="{{ site.pgp }}" target="_blank"> GnuPG Public Key</a>
+        {% endif %}
+
+        {% if site.stackoverflow %}
+        <hr >
+        <a href="https://stackoverflow.com/users/{{ site.stackoverflow }}?tab=profile">
+           <img src="https://stackoverflow.com/users/flair/{{ site.stackoverflow }}.png?theme=clean" width="208" height="58" alt="profile for {{ site.surname }} at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for {{ site.surname }} at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+        </a>
+        {% endif %}
+        <hr >
+        {% if site.profiles %}
+        <p>You may also want to check this profile:
+            <ul>
+                {% for user in site.profiles %}
+                  <li><a href="{{ user.link }}">{{ user.username }}</a></li>
+                {% endfor %}
+            </ul>
+        </p>
+        {% endif %}
+    </div>
+
+</div>
