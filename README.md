@@ -1,6 +1,4 @@
-# Copper Jekyll theme 
-
-[DEMO](https://mpgn.github.io/copper-jekyll-theme)
+# Copper Jekyll theme - [DEMO](https://mpgn.github.io/copper-jekyll-theme)
 
 ## Feature
 	
@@ -15,11 +13,22 @@
 - Google+ or Disqus comment
 - Fontawesome Icons
 
+## Two themes
+
+You can choose the use the left bar : 
+
+![img1](https://mpgn.github.io/copper-jekyll-theme/assets/images/1.png)
+
+Or remove the left bar in the file `_config.yml` by setting `left_bar` to false !
+
+![img1](https://mpgn.github.io/copper-jekyll-theme/assets/images/2.png)
+
+
 ## Instruction
 
-- fork this reposotory
-- change the `_config.yml` file with your values
-- create your blogging post
+1. fork this reposotory
+2. change the `_config.yml` file with your values
+3. create your blogging post
 
 ```
 ---
@@ -33,7 +42,7 @@ sticky: true -> if you want a star icon -this is not real sticky)
 ---
 ```
 
-- create categories : 
+4. create categories : 
 
 Add a file at the same level as `index.html`
 Then add this header into the file
@@ -50,17 +59,8 @@ And leave the rest of the file empty.
 
 Check the [demo](https://mpgn.github.io/copper-jekyll-theme) for example 
 
-- push to Github and active Github page on the repo settings
-- Enjoy ;)
-
-## Two themes
-
-You can choose the use the left bar : 
-![img1](https://mpgn.github.io/copper-jekyll-theme/assets/images/1.png)
-
-Or remove the left bar in the file `_config.yml` by setting `left_bar` to false !
-
-![img1](https://mpgn.github.io/copper-jekyll-theme/assets/images/2.png)
+5. push to Github and active Github page on the repo settings
+6. Enjoy ;)
 
 ## In the box
 
